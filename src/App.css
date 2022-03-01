@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+html {
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background: #a795ef;
+  font-family: "Inter", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.wrap {
+  background: #ffffff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 6px -6px #777;
+}
+.wrap__title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 2rem 0;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 1px solid #e6eeed;
+}
+.wrap__secondtitle {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: left;
+  border-bottom: 1px solid #e6eeed;
+}
+.wrap table td,
+.wrap table th {
+  vertical-align: middle;
 }
 
-.App-link {
-  color: #61dafb;
+.form-box,
+.footer {
+  margin-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  border-top: 1px solid #e6eeed;
+  padding: 2rem 0;
 }
+
+.table > tbody > tr:nth-of-type(2n+1) {
+  background: none;
+}
+.table > tbody > tr:nth-of-type(2n+1) td {
+  background: none;
+}
+.table > tbody > tr:nth-of-type(2n+1) td:first-child {
+  border-left-style: solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: left;
+}
+.table > tbody > tr:nth-of-type(2n+1) td:last-child {
+  border-right-style: solid;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.table > tbody > tr:nth-of-type(2n) td {
+  background: #f2f8fc;
+}
+.table > tbody > tr:nth-of-type(2n) td:first-child {
+  border-left-style: solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: left;
+}
+.table > tbody > tr:nth-of-type(2n) td:last-child {
+  border-right-style: solid;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.table > tbody > tr td {
+  border: 0;
+}
+
+.list-item .btn-primary {
+  background: none;
+  border-radius: 0;
+  border: 0;
+}
+.list-item .btn-delete {
+  color: #f95454;
+}
+.list-item .btn-go {
+  color: #00cb69;
+}
+
+/*# sourceMappingURL=style.css.map */
